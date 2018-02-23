@@ -263,16 +263,15 @@ To build an effective cost matrix that measures the impact of errors our model m
 
 The end-to-end calculations to derive CLV are involved and require a deep understanding of financial analysis techniques. However, an approximate figure can be derived from most kinds of transaction data. We calculate the following metrics from the data in order to derive this rough estimate for customer lifetime value.
 
-$$ \\text{Average Order Value} = \\frac {\\text{Total Purchase Amount}}{\\text{Total Number of Orders}}$$
-$$ \\text{Purchase Frequency} = \\frac {\\text{Total Number of Orders}}{\\text{Total Number of Customers}}$$
+![](./Images/Formulae%201.PNG)
 
 Customer Value then can be defined by multiplying these two values:
 
-Customer Value = Average Order Value \* Purchase Frequency
+![](./Images/Formulae%202.PNG)
 
 From these metrics, we have
 
-$$ \\text{Customer Lifetime Value} = \\frac {\\text{Average Customer Lifetime}\*\\text{Customer Value}}{\\text{Total Days Observed}}$$
+![](./Images/Formulae%203.PNG)
 
 These figures can be calculated easily from the data as shown below:
 
@@ -494,4 +493,6 @@ While our accuracy has reduced slightly, our cost incurred has halved and our tr
 Summary
 -------
 
-Churn is complex phenomenon involving several variables; many of which are not readily captured by data sources. However, with relatively simple techniques like the ones described so far, churn can be studied and predicted to a reliable precision. These techniques may also be extended further to describe churn more accurately.
+Churn is complex phenomenon involving several variables; many of which are not readily captured by data sources.
+
+However, with relatively simple techniques like the ones described so far, churn can be studied and predicted to a reliable precision. These techniques may also be extended further to describe churn more accurately.
