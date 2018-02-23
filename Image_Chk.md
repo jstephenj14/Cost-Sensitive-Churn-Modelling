@@ -1,7 +1,7 @@
 Image Chk
 ================
 
-![](.\Images\All%20Test.png)
+![](./Images/All%20Test.png)
 
 R Markdown
 ----------
