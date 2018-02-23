@@ -24,8 +24,6 @@ Defining Churn
 In real-world churn modelling projects, the criteria that define churn are often decided based on significant domain expertise and exploratory data analysis. For our purposes, we will approximate the value of a customer based on his/her gross purchase amount till date and consider the loss of such customer to be an example of churn. To do this, we will inspect the distribution of total spends per customer.
 
 ``` r
-# all_events <- read.csv("C:/Users/jstep/Downloads/Data Masked/Dataiku/Churn/all_events.csv",stringsAsFactors=FALSE)
-
 overview <- all_events %>%
    dplyr::filter(event == "purchase") %>%
    filter(price < 250) %>%
@@ -42,7 +40,7 @@ We see that the data is skewed with a median spends amount of 23$ and a mean of 
 
 For the purposes of identifying such customers who churn for the training data, we will look to the timeline below:
 
-![](C:/Users/jstep/Pictures/Train%20Churn%20Identification.png)
+![](./Images/Train%20Churn%20Identification.PNG)
 
 The data from interval colored in orange is used to identify valuable customers who transact in gross amounts exceeding $35.
 
@@ -76,7 +74,7 @@ Now that the target variable has been established, we will look to develop featu
 
 ### Long Term Variables
 
-![](C:/Users/jstep/Pictures/Long%20Term%20Train.png)
+![](./Images/Long%20Term%20Train.PNG)
 
 These variables capture characteristics of customer behaviour for 8 months prior to the hypothesized churn period. The length of this period is arbitrary; we consider a time period twice the length of the churn period (4 months) to be representative of customer behavior. We calculate the following metrics for defining these features on a customer level: \* Number of products viewed \* Number of distinct products viewed \* Variety of product categories viewed \* Variety of sellers considered \* Total amount transacted \* Number of products bought
 
@@ -102,7 +100,7 @@ The long term variables provide a good benchmark on which short-term variables (
 
 ### Short Term Variables
 
-![](C:/Users/jstep/Pictures/Short%20Term%20Train.png)
+![](./Images/Short%20Term%20Train.PNG)
 
 These variables capture characteristics of customer behaviour for 1 month prior to the hypothesized churn period. Once again, the length of this period is arbitrary; we considered 1 month to accurately capture change in customer behavior in the recent past. For this period we calculate the same metrics as in the Long Term scenario.
 
@@ -125,7 +123,7 @@ These variables capture characteristics of customer behaviour for 1 month prior 
 
 ### Lifetime Variables
 
-![](C:/Users/jstep/Pictures/LifeTime%20Train.png)
+![](./Images/LifeTime%20Train.PNG)
 
 These variables capture metrics describing properties of the customer's entire lifetime. For this period, we calculate: \* Total purchase amount \* Total products bought \* Total time elapsed since customer entry into data
 
@@ -170,7 +168,7 @@ Test Data Preparation
 
 For the test, the above process is rerun with only one change: all the colorful windows are moved four months to the right as shown below:
 
-![](C:/Users/jstep/Pictures/All%20Test.png)
+![](./Images/All%20Test.PNG)
 
 From the above we are hoping to acheive a test dataset comparable to our train dataset. There are some caveats for setting up test/train datasets in this manner:
 

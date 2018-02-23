@@ -62,7 +62,7 @@ We see that the data is skewed with a median spends amount of 23$ and a mean of 
 
 For the purposes of identifying such customers who churn for the training data, we will look to the timeline below:
 
-![](C:/Users/jstep/Pictures/Train Churn Identification.png)
+![](./Images/Train Churn Identification.PNG)
 
 The data from interval colored in orange is used to identify valuable customers who transact in gross amounts exceeding $35. 
 
@@ -98,7 +98,7 @@ Now that the target variable has been established, we will look to develop featu
 
 ### Long Term Variables
 
-![](C:/Users/jstep/Pictures/Long Term Train.png)
+![](./Images/Long Term Train.PNG)
 
 These variables capture characteristics of customer behaviour for 8 months prior to the hypothesized churn period. The length of this period is arbitrary; we consider a time period twice the length of the churn period (4 months) to be representative of customer behavior. We calculate the following metrics for defining these features on a customer level:
 * Number of products viewed
@@ -130,7 +130,7 @@ The long term variables provide a good benchmark on which short-term variables (
 
 ### Short Term Variables
 
-![](C:/Users/jstep/Pictures/Short Term Train.png)
+![](./Images/Short Term Train.PNG)
 
 These variables capture characteristics of customer behaviour for 1 month prior to the hypothesized churn period. Once again, the length of this period is arbitrary; we considered 1 month to accurately capture change in customer behavior in the recent past. For this period we calculate the same metrics as in the Long Term scenario.
 
@@ -153,7 +153,7 @@ These variables capture characteristics of customer behaviour for 1 month prior 
 
 ### Lifetime Variables
 
-![](C:/Users/jstep/Pictures/LifeTime Train.png)
+![](./Images/LifeTime Train.PNG)
 
 These variables capture metrics describing properties of the customer's entire lifetime. For this period,
 we calculate:
@@ -203,7 +203,7 @@ Here we derive the ratios of the short term variables to the long term variables
 
 For the test, the above process is rerun with only one change: all the colorful windows are moved four months to the right as shown below:
 
-![](C:/Users/jstep/Pictures/All Test.png)
+![](./Images/All Test.PNG)
 
 From the above we are hoping to acheive a test dataset comparable to our train dataset. There are some caveats for setting up test/train datasets in this manner:
 
