@@ -76,7 +76,13 @@ Now that the target variable has been established, we will look to develop featu
 
 ![](./Images/Long%20Term%20Train.PNG)
 
-These variables capture characteristics of customer behaviour for 8 months prior to the hypothesized churn period. The length of this period is arbitrary; we consider a time period twice the length of the churn period (4 months) to be representative of customer behavior. We calculate the following metrics for defining these features on a customer level: \* Number of products viewed \* Number of distinct products viewed \* Variety of product categories viewed \* Variety of sellers considered \* Total amount transacted \* Number of products bought
+These variables capture characteristics of customer behaviour for 8 months prior to the hypothesized churn period. The length of this period is arbitrary; we consider a time period twice the length of the churn period (4 months) to be representative of customer behavior. We calculate the following metrics for defining these features on a customer level: 
+-   Number of products viewed 
+-   Number of distinct products viewed
+-   Variety of product categories viewed
+-   Variety of sellers considered
+-   Total amount transacted
+-   Number of products bought
 
 The long term variables provide a good benchmark on which short-term variables (derived later) can be assessed by the model. We look to take ratios of these variables to make this benchmarking more unambiguous to potential machine learning algorithms.
 
@@ -125,7 +131,10 @@ These variables capture characteristics of customer behaviour for 1 month prior 
 
 ![](./Images/LifeTime%20Train.PNG)
 
-These variables capture metrics describing properties of the customer's entire lifetime. For this period, we calculate: \* Total purchase amount \* Total products bought \* Total time elapsed since customer entry into data
+These variables capture metrics describing properties of the customer's entire lifetime. For this period, we calculate:
+-   Total purchase amount
+-   Total products bought
+-   Total time elapsed since customer entry into data
 
 ``` r
   lifetime <- all_events %>%
