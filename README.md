@@ -1,7 +1,7 @@
 Cost-Sensitive Churn Classification
 ================
 
-Developed and documented by John Stephen Joseph Arul Selvam
+Developed and documented by **John Stephen Joseph Arul Selvam**
 
 Workflow Overview
 -------------------------
