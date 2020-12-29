@@ -1,7 +1,20 @@
 Cost-Sensitive Churn Classification
 ================
 
-Problem and Data Overview
+Developed and documented by John Stephen Joseph Arul Selvam
+
+Workflow Overview
+-------------------------
+This workflow delineates the most fundamental steps in the process of developing machine learning models to address business use cases. I cover the following steps in this workflow:
+
+- Data Overview & Data Source Identification
+- Problem Formulation (Defining Churn)
+- Exploratory Data Analysis (Defining customer lifetime value)
+- Analytical Modelling (Feature Engineering)
+- Metric Assessment (Cost-matrix development)
+- Model Building & Validation
+
+Data Overview
 -------------------------
 
 The dataset "all\_events" contains data about a customer's route through a ecommerce website. The website hosts products sold by different merchants. Products can be searched on a search page while separate product pages provide details on different products. Finally, payment gateway visits (which are assumed to be converted purchases) are also captured in the data. The dimensions in the dataset are further described below:
